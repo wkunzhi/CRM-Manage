@@ -1,0 +1,118 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="luffy-container">
+    <!--待添加的-->
+    <form action="?type=generate" method="post"><!--提交地址generate-->
+        {% csrf_token %}
+        {{ generate_formset.management_form }}
+        <div class="panel panel-default">
+        <div class="panel-heading" style='font-weight: bold'>
+            <i class="fa fa-list" aria-hidden="true"></i> 待新建权限列表
+            <button class="right btn btn-primary btn-xs" style="">
+                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                新建
+            </button>
+        </div>
+        <div class="panel-body" style="color: #9d9d9d">
+            注意：路由系统中自动发现且数据库中不存在的路由。
+        </div>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>名称</th>
+                    <th>URL</th>
+                    <th>别名</th>
+                    <th>所属菜单</th>
+                    <th>父权限</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for form in generate_formset %}
+                    <tr>
+                        <td style="">{{ forloop.counter }}</td>
+                    {% for field in form %}
+                        <td>
+                            {{ field }}<span style="color:red;">{{ field.errors.0 }}</span>
+                        </td>
+                    {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    </form>
+    <!--待删除的-->
+    <div class="panel panel-default">
+        <div class="panel-heading" style='font-weight: bold'>
+            <i class="fa fa-cubes" aria-hidden="true"></i> 数据库中有But路由没有
+        </div>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>名称</th>
+                    <th>URL</th>
+                    <th>别名</th>
+                    <th>删除</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in delete_row_list %}
+                    <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td>{{ row.title }}</td>
+                        <td>{{ row.url }}</td>
+                        <td>{{ row.name }}</td>
+                        <td>
+                            <a href="{% url 'rbac:multi_permissions_del' pk=row.id %}" style="color: #d9534f;"><i class="fa fa-trash-o"></i></a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <!--待更新的-->
+    <form action="?type=update" method="post"><!--提交地址update-->
+        {% csrf_token %}
+        {{ update_formset.management_form }}
+        <div class="panel panel-default">
+        <div class="panel-heading" style='font-weight: bold'>
+            <i class="fa fa-refresh" aria-hidden="true"></i> 待更新的权限表
+            <button class="right btn btn-primary btn-xs" style="">
+                <i class="fa fa-undo" aria-hidden="true"></i>
+                更新
+            </button>
+        </div>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>名称</th>
+                    <th>URL</th>
+                    <th>别名</th>
+                    <th>所属菜单</th>
+                    <th>父权限</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for form in update_formset %}
+                    <tr>
+                        <td style="">{{ forloop.counter }}</td>
+                        {% for field in form %}
+                            {% if forloop.first %}
+                                {{ field }}
+                            {% else %}
+                                <td>{{ field }}<span style="color:red;">{{ field.errors.0 }}</span></td>
+                            {% endif %}
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    </form>
+</div>
+{% endblock %}

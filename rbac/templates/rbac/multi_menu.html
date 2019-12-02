@@ -1,0 +1,19 @@
+<!--二级菜单-->
+<ul class="layui-nav layui-nav-tree" lay-filter="test" style="width: 200px; height: 100%; border-top: 1px solid #000">
+    {% for item in menu_dict.values %}
+        {% if forloop.counter == 1 %}
+            <li class="layui-nav-item layui-nav-itemed">
+        {% elif item.class == "hidden" %}
+            <li class="layui-nav-item ">
+        {% else %}
+            <li class="layui-nav-item layui-nav-itemed">
+        {% endif %}
+            <a href="javascript:;" style="text-decoration:none;"><i class="{{ item.icon }}">&nbsp;&nbsp;</i>{{ item.title }}</a>
+            <dl class="layui-nav-child">
+                {% for per in item.children %}
+                    <dd><a href="{{ per.url }}" class="{{ per.class }}" style="text-decoration:none;margin-left: 25px;">{{ per.title }}</a></dd>
+                {% endfor %}
+            </dl>
+        </li>
+    {% endfor %}
+</ul>

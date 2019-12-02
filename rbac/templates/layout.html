@@ -1,0 +1,108 @@
+{% load staticfiles %}
+{% load rbac %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>权限管理页面</title>
+    <link rel="shortcut icon" href="{% static 'imgs/default.png' %} ">
+    {#    <link rel="stylesheet" href="{% static 'plugins/bootstrap/css/bootstrap.css' %} "/>#}
+    <link rel="stylesheet" href="{% static 'plugins/font-awesome/css/font-awesome.css' %} "/>
+    <link rel="stylesheet" href="{% static 'css/commons.css' %} "/>
+    <link rel="stylesheet" href="{% static 'css/nav.css' %} "/>
+    <link rel="stylesheet" href="{% static 'rbac/css/rbac.css' %} "/>
+
+    <link rel="stylesheet" href="{% static 'layui/css/layui.css' %}">
+    <script src="{% static '/layui/layui.js' %}"></script>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100%;
+        }
+
+        html {
+            height: 100%;
+        }
+        .layui-header {
+            background-color: #393d49;
+        }
+
+    </style>
+    <!--某些单独的页面需要用自己的css-->
+    {% block css %}{% endblock %}
+</head>
+<body>
+
+<!--顶部-->
+<div class="layui-header">
+    <div>
+        <span style="color: #fff; font-size: 14px; line-height: 60px; margin-left: 60px">Zok Admin</span>
+    </div>
+    <!-- 头部区域 -->
+    <ul class="layui-nav layui-layout-left">
+        <li class="layui-nav-item layui-hide-xs" lay-unselect="">
+            <a href="https://www.zhangkunzhi.com" target="_blank" title="GitHub"><i
+                    class="layui-icon layui-icon-star-fill"></i> GitHub
+            </a>
+        </li>
+        <li class="layui-nav-item" lay-unselect="">
+            <a href="https://www.github.com/wkunzhi" layadmin-event="refresh" title="使用说明"><i
+                    class="layui-icon layui-icon-read"></i> 使用说明
+            </a>
+        </li>
+        <span class="layui-nav-bar" style="width: 0px; left: 142px; opacity: 0; top: 48px;"></span>
+    </ul>
+    <ul class="layui-nav layui-layout-right" lay-filter="layadmin-layout-right">
+        <li class="layui-nav-item" lay-unselect="">
+            <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=362416272" layadmin-event="refresh"
+               title="使用说明"><i
+                    class="layui-icon layui-icon-login-qq"></i> QQ
+            </a>
+        </li>
+        <li class="layui-nav-item" lay-unselect="">
+            <a href="javascript:;"> <cite><i class="layui-icon layui-icon-username"></i> 用户</cite> <span
+                    class="layui-nav-more"></span></a>
+            <dl class="layui-nav-child layui-anim layui-anim-upbit">
+                <dd layadmin-event="logout" style="text-align: center;"><a>退出</a></dd>
+            </dl>
+        </li>
+        <li class="layui-nav-item layui-hide-xs" lay-unselect="">
+            <a href="javascript:;" layadmin-event="about"><i class="layui-icon layui-icon-more-vertical"></i></a>
+        </li>
+    </ul>>
+</div>
+<div>
+
+</div>
+<!--左侧-->
+<!--实现可插拔功能，其他项目需要打印菜单时，用rbac中的inclusion_tag方法即可-->
+{% multi_menu request %}
+
+{#    <div class="right-body">#}
+{#        <div>#}
+{#            {% breadcrumb request %}#}
+{#        </div>#}
+{#        {% block content %} {% endblock %}#}
+{#    </div>#}
+
+<script src="{% static 'js/jquery-3.3.1.min.js' %} "></script>
+<script src="{% static 'plugins/bootstrap/js/bootstrap.js' %} "></script>
+<script src="{% static 'rbac/js/rbac.js' %} "></script>
+
+<!--某些单独的页面需要用自己的js-->
+<script>
+    //注意：导航 依赖 element 模块，否则无法进行功能性操作
+    layui.use('element', function () {
+        var element = layui.element;
+
+        //…
+    });
+</script>
+
+
+
+{% block js %} {% endblock %}
+
+</body>
+</html>

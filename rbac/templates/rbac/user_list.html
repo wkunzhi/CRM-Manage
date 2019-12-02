@@ -1,0 +1,48 @@
+<!--通用的新增和修改页面-->
+{% extends 'layout.html' %}
+
+
+{% block content %}
+
+    <div class="luffy-container">
+        <div class="btn-group" style="margin: 5px 0">
+            <!--因为rbac的urls有上级urls所以 ，反向生成url的方法如下-->
+            <a class="btn btn-default" href="{% url 'rbac:user_add' %}">  <!--反向生成url-->
+                <i class="fa fa-plus-square" aria-hidden="true"></i> 添加用户
+            </a>
+
+
+        </div>
+        <table class="table table-bordered table-hover">
+            <thead>
+            <tr>
+                <th>序号</th>
+                <th>用户名</th>
+                <th>邮箱</th>
+                <th>密码操作</th>
+                <th>操作</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            {% for row in users %}
+                <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td>{{ row.name }}</td>
+                    <td>{{ row.email }}</td>
+                    <td><a href="{% url 'rbac:user_reset_pwd' pk=row.id %}">重置密码</a></td>
+                    <td>
+                        <a style="color: #333333;" href="{% url 'rbac:user_edit' pk=row.id %}">  <!--反向取url 带参数pk-->
+                            <i class="fa fa-edit" aria-hidden="true"></i></a>
+
+                        <a style="color: #d9534f;" href="{% url 'rbac:user_del' pk=row.id %}"><i
+                                class="fa fa-trash-o"></i></a>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+
+{% endblock %}

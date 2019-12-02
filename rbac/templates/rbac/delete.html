@@ -1,0 +1,25 @@
+<!--通用的新增和修改页面-->
+{% extends 'layout.html' %}
+
+
+{% block content %}
+
+    <div class="luffy-container">
+        <div class="alert alert-danger" role="alert">
+            <form method="post">
+                {% csrf_token %}
+                <p style="font-size: 13px;"><i class="fa fa-warning" aria-hidden="true"></i>删除后不可恢复，请确认是否删除</p>
+
+
+                <div style="margin-top: 20px;">
+                    <a href="{{ cancel_url }}" class="btn btn-default btn-sm">取 消</a>
+                    <input type="submit" class="btn btn-danger btn-sm" value="确 认">
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+{% endblock %}
