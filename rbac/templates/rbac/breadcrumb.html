@@ -1,13 +1,12 @@
 <!--用户访问路径追踪-->
-<div>
-    <ol class="breadcrumb no-radius no-margin" style="border-bottom: 1px solid #ddd;">
-        {% for item in record_list %}
-            <!--判断是否是最后一层路径，最后一层为不可选中-->
-            {% if item.class %}
-                <li class="{{ item.class }}">{{ item.title }}</li>
-            {% else %}
-                <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-            {% endif %}
-        {% endfor %}
-    </ol>
+
+<div class="layui-breadcrumb" lay-filter="breadcrumb" style="visibility: visible;">
+    {% for item in record_list %}
+        <!--判断是否是最后一层路径，最后一层为不可选中-->
+        {% if item.class %}
+            <a style="text-decoration:none;"><cite>{{ item.title }}</cite></a>
+        {% else %}
+            <a style="text-decoration:none;" href="{{ item.url }}">{{ item.title }}</a><span lay-separator="">/</span>
+        {% endif %}
+    {% endfor %}
 </div>

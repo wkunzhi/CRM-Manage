@@ -14,11 +14,11 @@ urlpatterns = [
     url(r'^role/del/(?P<pk>\d+)/$', role.role_del, name='role_del'),  # {% url 'rbac:role_edit' %}
 
     # 用户管理
-    # path('user/list/', user.user_list, name='user_list'),
-    # path('user/add/', user.user_add, name='user_add'),
-    # url(r'^user/edit/(?P<pk>\d+)/$', user.user_edit, name='user_edit'),  # {% url 'rbac:user_edit' %}
-    # url(r'^user/del/(?P<pk>\d+)/$', user.user_del, name='user_del'),  # {% url 'rbac:user_edit' %}
-    # url(r'^user/reset/password/(?P<pk>\d+)/$', user.user_reset_pwd, name='user_reset_pwd'),  # {% url 'rbac:user_edit' %}
+    path('user/list/', user.user_list, name='user_list'),
+    path('user/add/', user.user_add, name='user_add'),
+    url(r'^user/edit/(?P<pk>\d+)/$', user.user_edit, name='user_edit'),  # {% url 'rbac:user_edit' %}
+    url(r'^user/del/(?P<pk>\d+)/$', user.user_del, name='user_del'),  # {% url 'rbac:user_edit' %}
+    url(r'^user/reset/password/(?P<pk>\d+)/$', user.user_reset_pwd, name='user_reset_pwd'),  # {% url 'rbac:user_edit' %}
 
 
     # 权限分配菜单（一级菜单）

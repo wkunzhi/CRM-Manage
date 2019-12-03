@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <title>权限管理页面</title>
     <link rel="shortcut icon" href="{% static 'imgs/default.png' %} ">
-    {#    <link rel="stylesheet" href="{% static 'plugins/bootstrap/css/bootstrap.css' %} "/>#}
+{#        <link rel="stylesheet" href="{% static 'plugins/bootstrap/css/bootstrap.css' %} "/>#}
     <link rel="stylesheet" href="{% static 'plugins/font-awesome/css/font-awesome.css' %} "/>
     <link rel="stylesheet" href="{% static 'css/commons.css' %} "/>
     <link rel="stylesheet" href="{% static 'css/nav.css' %} "/>
@@ -20,20 +20,41 @@
             margin: 0;
             height: 100%;
         }
-
         html {
             height: 100%;
+        }
+        .layui-header a {
+            text-decoration:none;
         }
         .layui-header {
             background-color: #393d49;
         }
-
+        .pg-body, .left-menu, .left-tree{
+            height: 100%;
+        }
+        .pg-body > .right-body {
+            background-color: #f2f2f2;
+            position: absolute;
+            left: 200px;
+            right: 0;
+            top: 60px;
+            height: 100%;
+            border: 1px solid #ddd;
+            font-size: 14px;
+            min-width: 755px;
+        }
+        .layui-card-one{
+            height: 50px;
+            line-height: 50px;
+            border-bottom: 1px solid #ddd;
+            padding: 0 17px;
+            background-color: white;
+        }
     </style>
     <!--某些单独的页面需要用自己的css-->
     {% block css %}{% endblock %}
 </head>
 <body>
-
 <!--顶部-->
 <div class="layui-header">
     <div>
@@ -70,37 +91,36 @@
         <li class="layui-nav-item layui-hide-xs" lay-unselect="">
             <a href="javascript:;" layadmin-event="about"><i class="layui-icon layui-icon-more-vertical"></i></a>
         </li>
-    </ul>>
+    </ul>
+    >
 </div>
-<div>
+<!--下部-->
+<div class="pg-body">
+    <!--左侧-->
+    <!--实现可插拔功能，其他项目需要打印菜单时，用rbac中的inclusion_tag方法即可-->
+    <div class="left-menu">
+        {% multi_menu request %}
+    </div>
+    <!--右侧-->
+    <div class="right-body">
+        <div class="layui-card-one">
+            {% breadcrumb request %}
+        </div>
+        {% block content %} {% endblock %}
+    </div>
 
 </div>
-<!--左侧-->
-<!--实现可插拔功能，其他项目需要打印菜单时，用rbac中的inclusion_tag方法即可-->
-{% multi_menu request %}
-
-{#    <div class="right-body">#}
-{#        <div>#}
-{#            {% breadcrumb request %}#}
-{#        </div>#}
-{#        {% block content %} {% endblock %}#}
-{#    </div>#}
 
 <script src="{% static 'js/jquery-3.3.1.min.js' %} "></script>
 <script src="{% static 'plugins/bootstrap/js/bootstrap.js' %} "></script>
 <script src="{% static 'rbac/js/rbac.js' %} "></script>
-
 <!--某些单独的页面需要用自己的js-->
 <script>
     //注意：导航 依赖 element 模块，否则无法进行功能性操作
     layui.use('element', function () {
         var element = layui.element;
-
-        //…
     });
 </script>
-
-
 
 {% block js %} {% endblock %}
 
