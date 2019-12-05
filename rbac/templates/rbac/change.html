@@ -1,41 +1,86 @@
 {% extends 'layout.html' %}
 {% block css %}
-<style>
-ul{
-    list-style-type: none;
-    padding: 0;
-}
-ul li{
-    float:left;
-    padding: 10px;
-    padding-left: 0;
-    width: 80px;
-}
-#id_icon li i{
-    font-size: 18px;
-    margin-left: 5px;
-    color: #6d6565;
-}
-</style>
+    <style>
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .change ul li {
+            float: left;
+            padding-left: 0;
+            width: 80px;
+        }
+        .change ul li label div{
+            float: left;
+            padding: 0;
+            margin: 0;
+        }
+       .change ul li label div i{
+            padding-top: 4px;
+        }
+        .change ul li label i{
+            padding-top: 10px;
+        }
+        #id_icon li i {
+            font-size: 18px;
+            margin-left: 5px;
+            color: #6d6565;
+        }
+
+    </style>
 {% endblock %}
 {% block content %}
-<div class="luffy-container">
-    <form class="form-horizontal" method="post" novalidate>
-        {% csrf_token %}
-        {% for field in form %}
-            <div class="form-group">
-                <label class="col-sm-2 control-label">{{ field.label }}</label>
-                <div class="col-sm-8">
-                    {{ field }}
-                    <span style="color: red;">{{ field.errors.0 }}</span>
+    <div class="layui-row" style="padding: 20px">
+        <div class="layui-col-md12">
+            <div class="layui-card">
+                <div class="layui-card-header">修改菜单</div>
+                <div class="layui-card-body">
+                    <form class="layui-form" method="post">
+                        {% csrf_token %}
+                        {% for field in form %}
+                            <div class="form-group" style="margin-bottom: 25px">
+                                <label class="layui-form-label">{{ field.label }}</label>
+                                <div class="change layui-input-block">
+                                    {{ field }}
+                                    <span style="color: red;">{{ field.errors.0 }}</span>
+                                </div>
+                            </div>
+                        {% endfor %}
+                        <div class="layui-form-item" style="padding-top: 30px">
+                            <div class="layui-input-block">
+                                <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
-        {% endfor %}
-        <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-8">
-                <input type="submit" value="保 存" class="btn btn-primary">
-            </div>
         </div>
-    </form>
-</div>
+    </div>
+
+
+    <script>
+        layui.use('form', function () {
+            var form = layui.form;
+
+        });
+    </script>
+    {#<div class="luffy-container">#}
+    {#    <form class="form-horizontal" method="post" novalidate>#}
+    {#        {% csrf_token %}#}
+    {#        {% for field in form %}#}
+    {#            <div class="form-group">#}
+    {#                <label class="col-sm-2 control-label">{{ field.label }}</label>#}
+    {#                <div class="col-sm-8 change">#}
+    {#                    {{ field }}#}
+    {#                    <span style="color: red;">{{ field.errors.0 }}</span>#}
+    {#                </div>#}
+    {#            </div>#}
+    {#        {% endfor %}#}
+    {#        <div class="form-group">#}
+    {#            <div class="col-sm-offset-2 col-sm-8">#}
+    {#                <input type="submit" value="保 存" class="btn btn-primary">#}
+    {#            </div>#}
+    {#        </div>#}
+    {#    </form>#}
+    {#</div>#}
 {% endblock %}

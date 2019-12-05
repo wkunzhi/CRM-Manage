@@ -26,6 +26,8 @@ def menu_list(request):
 
     menu_id = request.GET.get('mid')  # 这是str类型 用户选择的一级菜单
     second_sid = request.GET.get('sid')  # 用户选择的二级菜单，做选中状态
+    # print('second_sid', second_sid)
+    # print('menu_id', menu_id)
 
     # 判断用户是否伪造请求并处理2级菜单
     menu_exists = models.Menu.objects.filter(id=menu_id).exists()  # 判断这个id是否存在，在传给前端判断（双重保障判断）
@@ -77,6 +79,12 @@ def menu_add(request):
 
 
 def menu_edit(request, pk):
+    """
+    编辑菜单
+    :param request:
+    :param pk:
+    :return:
+    """
     obj = models.Menu.objects.filter(id=pk).first()
     if not obj:
         return HttpResponse('菜单不存在')

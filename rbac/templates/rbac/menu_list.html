@@ -6,8 +6,12 @@
     <style>
         {#被选中的，添加样式#}
         tr.active {
-            border-left: 3px solid #fdc00f;
+            border-left: 3px solid #009688;
         }
+        .layui-card-header {
+            padding-right: 0
+        }
+
     </style>
 {% endblock %}
 {% block content %}
@@ -18,17 +22,18 @@
                     <div class="layui-card">
                         <div class="layui-card-header">菜单说明</div>
                         <div class="layui-card-body">
-                            后台左侧菜单可以在此处进行配置<br>
+                            后台左侧菜单可以在此处进行配置 | 图标设置清空缓存才生效<br>
                             可进行操作右包含: 增加、删除、修改一级二级菜单
                         </div>
                     </div>
                 </div>
                 <div class="layui-col-md6">
                     <div class="layui-card">
-                        <div class="layui-card-header">权限操作</div>
+                        <div class="layui-card-header">快捷批量管理
+                        </div>
                         <div class="layui-card-body">
                             点击该页批量操作按钮进行管理<br>
-                            可以制作权限
+                            批量操作权限、菜单
                         </div>
                     </div>
                 </div>
@@ -38,8 +43,8 @@
                         <div class="layui-card-header">
                             <i class="fa fa-anchor" aria-hidden="true"></i> 顶级菜单
                             <!--templatetags中自定义函数 memory_url 处理打包get参数-->
-                            <a href="{% memory_url request 'rbac:menu_add' %}" class="right btn btn-success btn-xs"
-                               style="padding:2px 8px;margin: -3px;">
+                            <a href="{% memory_url request 'rbac:menu_add' %}" class="right layui-btn layui-btn-sm layui-btn-primary"
+                               style="margin: 6px">
                                 <i class="fa fa-plus-circle" aria-hidden="true"></i>
                                 新建
                             </a>
@@ -88,7 +93,7 @@
                             {% if mid %} <!--必须要选中了1级菜单， 才会显示创建按钮-->
                                 <!--templatetags中自定义函数 memory_url 处理打包get参数-->
                                 <a href="{% memory_url request 'rbac:second_menu_add' menu_id=mid %}"
-                                   class="right btn btn-success btn-xs" style="padding:2px 8px;margin: -3px;">
+                                   class="right layui-btn layui-btn-sm layui-btn-primary" style="margin: 6px">
                                     <i class="fa fa-plus-circle" aria-hidden="true"></i>
                                     新建
                                 </a>
@@ -139,22 +144,21 @@
                 <!--权限菜单-->
                 <div class="layui-col-md5">
                     <div class="layui-card">
-                        <div class="layui-card-header">
+                        <div class="layui-card-header" style="padding-right: 0">
                             <i class="fa fa-id-card-o" aria-hidden="true"></i> 权限
-                            <div class="btn-group right">
+                            <div class="btn-group right" style="margin: 6px">
+                                <a href="{% memory_url request 'rbac:multi_permissions' %}"
+                                   class="layui-btn layui-btn-sm" style="float:right;">
+                                    <i class="fa fa-bolt" aria-hidden="true"></i> 批量操作
+                                </a>
                                 {% if second_sid %} <!--必须要选中了2级菜单， 才会显示创建按钮-->
                                     <!--templatetags中自定义函数 memory_url 处理打包get参数-->
                                     <a href="{% memory_url request 'rbac:permission_add' second_menu_id=second_sid %}"
-                                       class="right btn btn-success btn-xs" style="padding:2px 8px;margin: -3px;">
+                                       class="layui-btn layui-btn-sm layui-btn-primary" style="float: right;margin-right: 2px">
                                         <i class="fa fa-plus-circle" aria-hidden="true"></i>
                                         新建
                                     </a>
                                 {% endif %}
-                                <a href="{% memory_url request 'rbac:multi_permissions' %}"
-                                   class="btn btn-xs btn-primary"
-                                   style="padding:2px 8px;margin: -3px;">
-                                    <i class="fa fa-mail-forward" aria-hidden="true"></i>批量操作
-                                </a>
                             </div>
                         </div>
                         <div class="layui-card-body" style="padding: 0">

@@ -38,7 +38,7 @@ def multi_menu(request):
         # 如果字典中url跟当前url相等，那么class:hide换成active
         for per in val['children']:
             if per['id'] == request.current_selected:
-                per['class'] = 'active'  # 给自己（当前children）加一个class：active
+                per['class'] = 'layui-this'  # 给自己（当前children）加一个class：active
                 val['class'] = ''  # 父亲加上空（展开）
         ordered_dict[key] = val
 

@@ -8,4 +8,4 @@ class BootStrapModelForm(forms.ModelForm):
         super(BootStrapModelForm, self).__init__(*args, **kwargs)
         # 统一给modelform生成字段添加boot样式
         for name, field in self.fields.items():
-            field.widget.attrs['class'] = 'form-control'
+            field.widget.attrs['class'] = 'layui-input'
