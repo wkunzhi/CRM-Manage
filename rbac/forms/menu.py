@@ -43,22 +43,22 @@ class PermissionModelForm(BootStrapModelForm):
 class MultiAddPermissionForm(forms.Form):
     """批量添加"""
     title = forms.CharField(
-        widget=forms.TextInput(attrs={'class': 'form-control'})
+        widget=forms.TextInput(attrs={'class': 'layui-input'})
     )
     url = forms.CharField(
-        widget=forms.TextInput(attrs={'class': 'form-control'})
+        widget=forms.TextInput(attrs={'class': 'layui-input'})
     )
     name = forms.CharField(
-        widget=forms.TextInput(attrs={'class': 'form-control'})
+        widget=forms.TextInput(attrs={'class': 'layui-input'})
     )
     menu_id = forms.ChoiceField(
         choices=[(None, '-----')],
-        widget=forms.Select(attrs={'class': 'form-control'}),
+        widget=forms.Select(attrs={'class': 'layui-input'}),
         required=False,
     )
     pid_id = forms.ChoiceField(
         choices=[(None, '-----')],
-        widget=forms.Select(attrs={'class': 'form-control'}),
+        widget=forms.Select(attrs={'class': 'layui-input'}),
         required=False,
     )
 
@@ -75,22 +75,22 @@ class MultiEditPermissionForm(forms.Form):
         widget=forms.HiddenInput()  # 自动隐藏
     )
     title = forms.CharField(
-        widget=forms.TextInput(attrs={'class': 'form-control'})
+        widget=forms.TextInput(attrs={'class': 'layui-input'})
     )
     url = forms.CharField(
-        widget=forms.TextInput(attrs={'class': 'form-control'})
+        widget=forms.TextInput(attrs={'class': 'layui-input'})
     )
     name = forms.CharField(
-        widget=forms.TextInput(attrs={'class': 'form-control'})
+        widget=forms.TextInput(attrs={'class': 'layui-input'})
     )
     menu_id = forms.ChoiceField(
         choices=[(None, '-----')],
-        widget=forms.Select(attrs={'class': 'form-control'}),
+        widget=forms.Select(attrs={'class': 'layui-input layui-unselect'}),
         required=False,
     )
     pid_id = forms.ChoiceField(
         choices=[(None, '-----')],
-        widget=forms.Select(attrs={'class': 'form-control'}),
+        widget=forms.Select(attrs={'class': 'layui-input layui-unselect'}),
         required=False,
     )
 
