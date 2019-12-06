@@ -26,13 +26,16 @@
         }
 
         .pg-body {
-            overflow: hidden;
+            height: calc(100vh - 60px);
         }
 
         .left-menu {
             float: left;
-            min-height: 100%;
+            width: 200px;
+            height: 100%;
+            overflow: auto;
         }
+
         .layui-header a {
             text-decoration: none;
         }
@@ -42,20 +45,18 @@
         }
 
         .pg-body, .left-menu, .left-tree {
-            {#height: 100%;#}
+        {#height: 100%;#} background-color: #272a33;
         }
 
         .pg-body > .right-body {
+            box-sizing: border-box;
             background-color: #f2f2f2;
             float: left;
-            width: calc(100% - 202px);
-            {#position: absolute;#}
-            {#left: 200px;#}
-            {#right: 0;#}
-            {#top: 60px;#}
-            border: 1px solid #ddd;
+            height: 100%;
+            width: calc(100% - 200px);
+        {#position: absolute;#} border: 1px solid #ddd;
             font-size: 14px;
-            {#min-width: 755px;#}
+            overflow: auto;
         }
 
         .layui-card-one {
@@ -116,14 +117,16 @@
     <div class="left-menu">
         <div class="menu-body">
             {% multi_menu request %}
-         </div>
+        </div>
     </div>
     <!--右侧-->
     <div class="right-body">
         <div class="layui-card-one">
             {% breadcrumb request %}
         </div>
-        {% block content %} {% endblock %}
+        <div class="right-t-body">
+            {% block content %} {% endblock %}
+        </div>
     </div>
 </div>
 <script src="{% static 'js/jquery-3.3.1.min.js' %} "></script>

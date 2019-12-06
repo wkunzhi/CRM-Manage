@@ -368,6 +368,7 @@ def distribute_permissions(request):
     :param request:
     :return:
     """
+    print(request.POST)
     # 取业务中的用户表(因为设计成了可插拔式)
     user_model_class = import_string(settings.RBAC_USER_MODEL_CLASS)
 

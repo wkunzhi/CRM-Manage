@@ -11,5 +11,5 @@ class RoleModelForm(forms.ModelForm):
 
         # 调用bootCSS  给加上class=''即可  自定义样式！
         widgets = {
-            'title': forms.TextInput(attrs={'class': 'form-control'})
+            'title': forms.TextInput(attrs={'class': 'layui-input'})
         }

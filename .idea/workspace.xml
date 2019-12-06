@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81756bfe-b9ff-4b52-9bd6-cbfad11c7f13" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rbac/forms/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/forms/menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbac/forms/role.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/forms/role.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rbac/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rbac/templates/rbac/change.html" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/templates/rbac/change.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rbac/templates/rbac/menu_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/templates/rbac/menu_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rbac/templates/rbac/multi_permissions.html" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/templates/rbac/multi_permissions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbac/templates/rbac/distribute_permissions.html" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/templates/rbac/distribute_permissions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbac/templates/rbac/role_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/templates/rbac/role_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbac/views/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/views/menu.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rbac/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
+            <state relative-caret-position="720">
+              <caret line="44" column="58" selection-start-line="44" selection-start-column="58" selection-end-line="44" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -55,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rbac/views/menu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="243" column="30" lean-forward="true" selection-start-line="243" selection-start-column="30" selection-end-line="243" selection-end-column="30" />
+            <state relative-caret-position="429">
+              <caret line="377" column="22" lean-forward="true" selection-start-line="377" selection-start-column="22" selection-end-line="377" selection-end-column="22" />
               <folding>
                 <element signature="e#43#102#0" expanded="true" />
               </folding>
@@ -65,10 +64,36 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rbac/templates/layout.html">
+        <entry file="file://$PROJECT_DIR$/rbac/templates/rbac/distribute_permissions.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+            <state relative-caret-position="241">
+              <caret line="191" lean-forward="true" selection-start-line="191" selection-end-line="191" />
+              <folding>
+                <element signature="e#2010#2059#0#HTML" expanded="true" />
+                <element signature="e#2097#2715#0#HTML" />
+                <element signature="e#3105#3127#0#HTML" expanded="true" />
+                <element signature="e#3411#3429#0#HTML" expanded="true" />
+                <element signature="e#3410#3452#0#HTML" expanded="true" />
+                <element signature="e#3786#3821#0#HTML" expanded="true" />
+                <element signature="e#5281#5299#0#HTML" expanded="true" />
+                <element signature="e#5327#5385#0#HTML" expanded="true" />
+                <element signature="e#5648#7969#0#HTML" />
+                <element signature="e#2062#2691#0#HTML" />
+                <element signature="e#2720#4676#0#HTML" />
+                <element signature="e#3227#3265#0#HTML" expanded="true" />
+                <element signature="e#5929#9661#0#HTML" />
+                <element signature="e#6472#6510#0#HTML" expanded="true" />
+                <element signature="e#6770#6793#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rbac/templates/rbac/menu_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="45" selection-start-line="45" selection-end-line="49" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -76,18 +101,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rbac/templates/rbac/multi_permissions.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
-              <folding>
-                <element signature="e#110#145#0#HTML" expanded="true" />
-                <element signature="e#504#531#0#HTML" expanded="true" />
-                <element signature="e#559#601#0#HTML" expanded="true" />
-                <element signature="e#815#832#0#HTML" expanded="true" />
-                <element signature="e#894#929#0#HTML" expanded="true" />
-                <element signature="e#1647#1666#0#HTML" expanded="true" />
-                <element signature="e#2082#2116#0#HTML" expanded="true" />
-                <element signature="e#4253#4288#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="-904">
+              <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -111,6 +126,8 @@
       <find>form-control</find>
       <find>layui-card-header</find>
       <find>form</find>
+      <find>type</find>
+      <find>role</find>
     </findStrings>
     <replaceStrings>
       <replace>layui-input</replace>
@@ -145,16 +162,18 @@
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/GetFont.py" />
         <option value="$PROJECT_DIR$/rbac/forms/base.py" />
-        <option value="$PROJECT_DIR$/rbac/views/menu.py" />
         <option value="$PROJECT_DIR$/rbac/templatetags/rbac.py" />
         <option value="$PROJECT_DIR$/rbac/templates/rbac/multi_menu.html" />
         <option value="$PROJECT_DIR$/rbac/templates/rbac/delete.html" />
-        <option value="$PROJECT_DIR$/rbac/templates/rbac/distribute_permissions.html" />
         <option value="$PROJECT_DIR$/rbac/templates/rbac/menu_list.html" />
         <option value="$PROJECT_DIR$/rbac/forms/menu.py" />
         <option value="$PROJECT_DIR$/rbac/templates/rbac/change.html" />
         <option value="$PROJECT_DIR$/rbac/templates/rbac/multi_permissions.html" />
         <option value="$PROJECT_DIR$/rbac/templates/layout.html" />
+        <option value="$PROJECT_DIR$/rbac/templates/rbac/role_list.html" />
+        <option value="$PROJECT_DIR$/rbac/forms/role.py" />
+        <option value="$PROJECT_DIR$/rbac/views/menu.py" />
+        <option value="$PROJECT_DIR$/rbac/templates/rbac/distribute_permissions.html" />
       </list>
     </option>
   </component>
@@ -331,16 +350,15 @@
       <updated>1574909502733</updated>
       <workItem from="1574909505160" duration="31128000" />
       <workItem from="1575508900136" duration="14588000" />
-      <workItem from="1575595889095" duration="10542000" />
+      <workItem from="1575595889095" duration="19462000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65300000" />
+    <option name="totallyTimeSpent" value="74220000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="56" y="23" width="1624" height="1027" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1795196" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -358,20 +376,18 @@
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="bottom" id="manage.py@CompanyQuiry" order="12" weight="0.18074866" />
+      <window_info anchor="bottom" id="Run" order="13" visible="true" weight="0.16149732" />
       <window_info anchor="right" id="SciView" order="0" weight="0.32996207" />
       <window_info anchor="right" id="Database" order="1" weight="0.32996207" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
-      <window_info anchor="right" id="Run" order="5" visible="true" weight="0.22439949" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/流程图.png" />
-    <entry file="file://$PROJECT_DIR$/templates/index.html" />
     <entry file="file://$PROJECT_DIR$/web/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -490,13 +506,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/daili.html" />
     <entry file="file://$PROJECT_DIR$/test.py" />
-    <entry file="file://$PROJECT_DIR$/rbac/views/user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-142">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/views/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -570,13 +579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rbac/forms/role.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rbac/templates/rbac/multi_menu.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -584,17 +586,6 @@
           <folding>
             <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#dd#0;n#dl#0;n#li#2;n#ul#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rbac/templates/rbac/breadcrumb.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -622,27 +613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rbac/templates/rbac/distribute_permissions.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3230">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rbac/templates/rbac/menu_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="41" column="3" selection-start-line="41" selection-start-column="3" selection-end-line="85" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rbac/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rbac/templates/rbac/change.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
@@ -657,37 +627,107 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rbac/views/menu.py">
+    <entry file="file://$PROJECT_DIR$/rbac/templates/rbac/role_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="243" column="30" lean-forward="true" selection-start-line="243" selection-start-column="30" selection-end-line="243" selection-end-column="30" />
+        <state relative-caret-position="342">
+          <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
           <folding>
-            <element signature="e#43#102#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rbac/templates/rbac/multi_permissions.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
-          <folding>
-            <element signature="e#110#145#0#HTML" expanded="true" />
-            <element signature="e#504#531#0#HTML" expanded="true" />
-            <element signature="e#559#601#0#HTML" expanded="true" />
-            <element signature="e#815#832#0#HTML" expanded="true" />
-            <element signature="e#894#929#0#HTML" expanded="true" />
-            <element signature="e#1647#1666#0#HTML" expanded="true" />
-            <element signature="e#2082#2116#0#HTML" expanded="true" />
-            <element signature="e#4253#4288#0#HTML" expanded="true" />
+            <element signature="e#108#128#0#HTML" expanded="true" />
+            <element signature="e#202#234#0#HTML" expanded="true" />
+            <element signature="e#613#631#0#HTML" expanded="true" />
+            <element signature="e#657#685#0#HTML" expanded="true" />
+            <element signature="e#748#783#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rbac/templates/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+        <state relative-caret-position="190">
+          <caret line="114" column="13" lean-forward="true" selection-start-line="114" selection-start-column="13" selection-end-line="114" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rbac/forms/role.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rbac/templates/rbac/breadcrumb.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rbac/templates/rbac/menu_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="45" selection-start-line="45" selection-end-line="49" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rbac/templates/rbac/multi_permissions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-904">
+          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rbac/views/role.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rbac/views/user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rbac/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="44" column="58" selection-start-line="44" selection-start-column="58" selection-end-line="44" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rbac/views/menu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="377" column="22" lean-forward="true" selection-start-line="377" selection-start-column="22" selection-end-line="377" selection-end-column="22" />
+          <folding>
+            <element signature="e#43#102#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rbac/templates/rbac/distribute_permissions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="191" lean-forward="true" selection-start-line="191" selection-end-line="191" />
+          <folding>
+            <element signature="e#2010#2059#0#HTML" expanded="true" />
+            <element signature="e#2097#2715#0#HTML" />
+            <element signature="e#3105#3127#0#HTML" expanded="true" />
+            <element signature="e#3411#3429#0#HTML" expanded="true" />
+            <element signature="e#3410#3452#0#HTML" expanded="true" />
+            <element signature="e#3786#3821#0#HTML" expanded="true" />
+            <element signature="e#5281#5299#0#HTML" expanded="true" />
+            <element signature="e#5327#5385#0#HTML" expanded="true" />
+            <element signature="e#5648#7969#0#HTML" />
+            <element signature="e#2062#2691#0#HTML" />
+            <element signature="e#2720#4676#0#HTML" />
+            <element signature="e#3227#3265#0#HTML" expanded="true" />
+            <element signature="e#5929#9661#0#HTML" />
+            <element signature="e#6472#6510#0#HTML" expanded="true" />
+            <element signature="e#6770#6793#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
