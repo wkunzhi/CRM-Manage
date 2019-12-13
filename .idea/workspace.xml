@@ -3,10 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="81756bfe-b9ff-4b52-9bd6-cbfad11c7f13" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompanyQuiry/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/CompanyQuiry/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbac/forms/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/forms/menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbac/middlewares/rbac.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/middlewares/rbac.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbac/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbac/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbac/service/init_permission.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/service/init_permission.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rbac/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rbac/templates/rbac/distribute_permissions.html" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/templates/rbac/distribute_permissions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbac/templates/rbac/menu_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/templates/rbac/menu_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rbac/templatetags/rbac.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/templatetags/rbac.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rbac/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rbac/views/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/rbac/views/menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/views/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/views/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/流程图.jpg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,10 +56,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rbac/urls.py">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="471">
+                <caret line="35" column="45" lean-forward="true" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CompanyQuiry/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="20" selection-end-column="123" />
+            <state relative-caret-position="510">
+              <caret line="160" column="1" lean-forward="true" selection-start-line="160" selection-start-column="1" selection-end-line="160" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -77,6 +102,8 @@
       <find>layui-colla-content layui-show</find>
       <find>check-all</find>
       <find>&gt;</find>
+      <find>你的账户无权访问该页面</find>
+      <find>current_selected</find>
     </findStrings>
     <replaceStrings>
       <replace>layui-input</replace>
@@ -92,14 +119,11 @@
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/web/apps.py" />
         <option value="$PROJECT_DIR$/CompanyQuiry/__init__.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$USER_HOME$/Library/Python/3.7/lib/python/site-packages/django/db/backends/mysql/operations.py" />
         <option value="$PROJECT_DIR$/web/templates/index.html" />
-        <option value="$PROJECT_DIR$/CompanyQuiry/settings.py" />
         <option value="$PROJECT_DIR$/rbac/service/init_permission.py" />
         <option value="$PROJECT_DIR$/rbac/models.py" />
         <option value="$PROJECT_DIR$/web/models.py" />
-        <option value="$PROJECT_DIR$/CompanyQuiry/urls.py" />
         <option value="$PROJECT_DIR$/web/views/views.py" />
         <option value="$PROJECT_DIR$/web/templates/login.html" />
         <option value="$PROJECT_DIR$/test.py" />
@@ -110,7 +134,6 @@
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/GetFont.py" />
         <option value="$PROJECT_DIR$/rbac/forms/base.py" />
-        <option value="$PROJECT_DIR$/rbac/templatetags/rbac.py" />
         <option value="$PROJECT_DIR$/rbac/templates/rbac/multi_menu.html" />
         <option value="$PROJECT_DIR$/rbac/templates/rbac/delete.html" />
         <option value="$PROJECT_DIR$/rbac/templates/rbac/menu_list.html" />
@@ -123,12 +146,17 @@
         <option value="$PROJECT_DIR$/rbac/templates/rbac/distribute_permissions.html" />
         <option value="$PROJECT_DIR$/rbac/templates/layout.html" />
         <option value="$PROJECT_DIR$/rbac/urls.py" />
+        <option value="$PROJECT_DIR$/CompanyQuiry/urls.py" />
+        <option value="$PROJECT_DIR$/rbac/templatetags/rbac.py" />
+        <option value="$PROJECT_DIR$/rbac/middlewares/rbac.py" />
+        <option value="$PROJECT_DIR$/CompanyQuiry/settings.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="56" />
-    <option name="y" value="24" />
+    <option name="y" value="23" />
     <option name="width" value="1624" />
     <option name="height" value="1027" />
   </component>
@@ -140,6 +168,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -152,17 +181,10 @@
               <item name="CompanyQuiry" type="462c0819:PsiDirectoryNode" />
               <item name="rbac" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="CompanyQuiry" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CompanyQuiry" type="462c0819:PsiDirectoryNode" />
-              <item name="rbac" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -289,17 +311,19 @@
       <workItem from="1575595889095" duration="19484000" />
       <workItem from="1575680978075" duration="589000" />
       <workItem from="1575681903119" duration="10755000" />
+      <workItem from="1576205118116" duration="111000" />
+      <workItem from="1576205250908" duration="2344000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85586000" />
+    <option name="totallyTimeSpent" value="88041000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="56" y="24" width="1624" height="1027" extended-state="0" />
+    <frame x="56" y="23" width="1624" height="1027" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18331227" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18710493" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="0" />
@@ -315,7 +339,7 @@
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="bottom" id="manage.py@CompanyQuiry" order="12" weight="0.18074866" />
-      <window_info anchor="bottom" id="Run" order="13" visible="true" weight="0.16149732" />
+      <window_info anchor="bottom" id="Run" order="13" visible="true" weight="0.31229946" />
       <window_info anchor="right" id="SciView" order="0" weight="0.32996207" />
       <window_info anchor="right" id="Database" order="1" weight="0.32996207" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
@@ -327,9 +351,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/templates/data_list.html" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/caaa2213-0ba1-41d3-b453-3178361bea97/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
@@ -352,16 +373,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rbac/【说明】权限组件使用文档.md" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="10" selection-start-column="10" selection-end-column="10" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/流程图.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -382,13 +393,6 @@
     <entry file="file://$PROJECT_DIR$/rbac/forms/user.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/CompanyQuiry/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
-          <caret line="53" column="7" lean-forward="true" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rbac/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1296">
@@ -403,13 +407,6 @@
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rbac/middlewares/rbac.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="32" column="77" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="77" />
         </state>
       </provider>
     </entry>
@@ -445,13 +442,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/daili.html" />
     <entry file="file://$PROJECT_DIR$/test.py" />
-    <entry file="file://$PROJECT_DIR$/web/views/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rbac/static/imgs/default.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -508,16 +498,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CompanyQuiry/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rbac/templates/rbac/delete.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -527,16 +507,6 @@
             <element signature="e#336#379#0#HTML" expanded="true" />
             <element signature="e#497#522#0#HTML" expanded="true" />
             <element signature="e#495#522#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rbac/templatetags/rbac.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
-          <folding>
-            <element signature="e#44#76#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -658,10 +628,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/stark.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/views/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CompanyQuiry/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rbac/templatetags/rbac.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#44#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rbac/middlewares/rbac.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/rbac/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="20" selection-end-column="123" />
+        <state relative-caret-position="306">
+          <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CompanyQuiry/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="160" column="1" lean-forward="true" selection-start-line="160" selection-start-column="1" selection-end-line="160" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="471">
+            <caret line="35" column="45" lean-forward="true" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

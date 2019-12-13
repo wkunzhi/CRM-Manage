@@ -1,0 +1,105 @@
+{% extends 'layout.html' %}
+{% block css %}
+<style>
+    .pagination {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    li {
+        display: inline;
+    }
+    .ser-key{
+        height: 25px;
+        width: 300px;
+        line-height: 50px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+    <div class="layui-card" style="margin: 20px">
+        <div class="layui-card-header"><i class="fa fa-filter" aria-hidden="true"></i> 快速筛选</div>
+        <div class="layui-card-body">
+            {% if search_group_row_list %}
+                <div class="search-group">
+                    {% for row in search_group_row_list %}
+                        <div style="margin-bottom: 5px">
+                            {% for obj in row %}
+                                {{ obj|safe }}
+                            {% endfor %}
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="layui-card" style="margin: 20px">
+        <div class="layui-card-header"><i class="fa fa-database" aria-hidden="true"></i> 数据
+            {% if add_btn %}   <!--新增按钮-->
+                <div style="float: right;">
+                    <a class="layui-btn layui-btn-sm" href="{{ add_btn|safe }}">  <!--反向生成url-->
+                        <i class="fa fa-plus-square" aria-hidden="true"></i> 新增数据
+                    </a>
+                </div>
+            {% endif %}
+            {% if search_list %}  <!--搜索框-->
+                <div style="float: right;">
+                    <form method="get" class="layui-form" style="margin-right: 5px">
+                        {% csrf_token %}
+                        <input class="ser-key" type="text" name="q" value="{{ search_value }}" placeholder="关键字搜索">
+                        <button class="layui-btn layui-btn-sm" type="submit">
+                            <i class="fa fa-search" aria-hidden="true"> 搜索</i>
+                        </button>
+                    </form>
+                </div>
+            {% endif %}
+        </div>
+
+        <div class="layui-card-body" style="padding: 0">
+
+            <form method="post">
+                {% csrf_token %}
+                {% if action_dict %}
+                    <div style="float: left;margin: 5px 10px 5px 0;">
+                        <div class="form-inline">
+                            <div class="form-group">
+                                <select class="form-control" name="action">
+                                    <option value="">请选择操作</option>
+                                    {% for func_name,func_text in action_dict.items %}
+                                        <option value="{{ func_name }}">{{ func_text }}</option>
+                                    {% endfor %}
+                                </select>
+                                <input class="btn btn-primary" type="submit" value="执行"/>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+                <table class="layui-table">
+                    <thead>
+                    <tr style="background-color: #00968817">
+                        {% for item in header_list %}
+                            <th>{{ item }}</th>
+                        {% endfor %}
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for row in body_list %}
+                        <tr>
+                            {% for ele in row %}
+                                <td>{{ ele }}</td>
+                            {% endfor %}
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </form>
+            <nav class="pagination">
+                <ul class="layui-box layui-laypage">
+                    {{ pager.page_html|safe }}
+                </ul>
+            </nav>
+        </div>
+    </div>
+{% endblock %}

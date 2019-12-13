@@ -73,4 +73,4 @@ class RbacMiddleware(MiddlewareMixin):
                 break
 
         if not flag:
-            return HttpResponse('你的账户无权访问该页面')
+            return HttpResponse('你的账户无权访问该页面<a href="/login">点击登录</a>')

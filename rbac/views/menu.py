@@ -22,8 +22,7 @@ def menu_list(request):
     :param request:
     :return:
     """
-    menus = models.Menu.objects.all()
-
+    menus = models.Menu.objects.order_by('sort')
     menu_id = request.GET.get('mid')  # 这是str类型 用户选择的一级菜单
     second_sid = request.GET.get('sid')  # 用户选择的二级菜单，做选中状态
     # print('second_sid', second_sid)

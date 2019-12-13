@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+  <div class="layui-row" style="margin: 20px">
+    <div class="layui-col-md3">
+      <div class="layui-card">
+      <div class="layui-card-header">请注意 !</div>
+      <div class="layui-card-body">
+        <form method="post">
+            {% csrf_token %}
+            <p style="font-size: 16px;text-align: center;"><i class="fa fa-warning" aria-hidden="true"></i> 删除后不可恢复，请确认是否删除</p>
+            <div style="margin-top: 20px;">
+                <div style="text-align: center;">
+                    <a href="{{ cancel }}" class="layui-btn layui-btn-lg">取 消</a>
+                    <input type="submit" class="layui-btn layui-btn-danger layui-btn-lg" value="确 认">
+                </div>
+            </div>
+        </form>
+      </div>
+    </div>
+    </div>
+  </div>
+
+{% endblock %}

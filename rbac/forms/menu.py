@@ -16,10 +16,11 @@ class MenuModelForm(forms.ModelForm):
     """一级菜单FORM"""
     class Meta:
         model = models.Menu
-        fields = ['title', 'icon']
+        fields = ['title', 'sort', 'icon']
         # 给标签加上boot样式
         widgets = {
             'title': forms.TextInput(attrs={'class': 'layui-input'}),  # 渲染的时候添加class属性
+            'sort': forms.TextInput(attrs={'class': 'layui-input'}),
             'icon': forms.RadioSelect(  # 转换成单选框 Radio
                 choices=icon_list,
                 attrs={'class': 'clearfix'}  # boot中清除浮动

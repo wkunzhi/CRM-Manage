@@ -7,6 +7,9 @@ class Menu(models.Model):
     """
     title = models.CharField(verbose_name='菜单名称', max_length=32)
     # 图标http://fontawesome.dashgame.com/
+
+    sort = models.IntegerField(verbose_name='显示顺序', default=1)
+
     icon = models.CharField(verbose_name='菜单图标', max_length=32)  # blank 为admin后台可以空
 
     def __str__(self):

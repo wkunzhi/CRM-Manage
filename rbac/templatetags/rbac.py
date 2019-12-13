@@ -21,11 +21,9 @@ def multi_menu(request):
     :return:
     """
     menu_dict = request.session[settings.MENU_SESSION_KEY]
-
     '''必须排序，因为dict 是无序的，可能后台显示菜单每次顺序不同'''
     # 对字典的key进行排序
-    key_list = sorted(menu_dict)
-
+    key_list = menu_dict
     # 空的有序字典
     ordered_dict = OrderedDict()
 

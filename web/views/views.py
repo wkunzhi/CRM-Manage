@@ -22,12 +22,12 @@ def login(request):
     init_permission(user, request)  # 权限初始化
     request.session['user_info'] = {'id': user.id, 'nickname': user.nickname}
     # return JsonResponse({'user': "OK"})
-    return redirect('/index/')
+    return redirect('/rbac/menu/list/')
 
 
 def logout(request):
     """
-    注销
+    退出
     :param request:
     :return:
     """
@@ -38,4 +38,5 @@ def logout(request):
 
 def index(request):
     return render(request, 'index.html')
+
 

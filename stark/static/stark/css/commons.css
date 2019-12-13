@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+}
+
+img {
+    border: 0;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.font-16 {
+    font-size: 16px !important;
+}
+
+.clearfix:after {
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0;
+}
+
+.bg-danger {
+    background-color: #d9534f !important;
+    color: #ffffff;
+}
+
+.bg-success {
+    background-color: #5cb85c !important;
+    color: #ffffff;
+}
+
+.badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: #777;
+    border-radius: 10px;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+body {
+    margin: 0;
+}
+
+.no-radius {
+    border-radius: 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.pg-body > .left-menu {
+    background-color: #EAEDF1;
+    position: absolute;
+    left: 0px;
+    top: 48px;
+    bottom: 0;
+    width: 220px;
+    overflow: auto;
+}
+
+.pg-body > .right-body {
+    position: absolute;
+    left: 219px;
+    right: 0;
+    top: 48px;
+    bottom: 0;
+    overflow: scroll;
+    border: 1px solid #ddd;
+    border-top: 0;
+    font-size: 13px;
+    min-width: 755px;
+    /*background-color: #f2f2f2;*/
+}
+
+.navbar-right {
+    float: right !important;
+    margin-right: -15px;
+}
+
+.luffy-container {
+    padding: 15px;
+}
