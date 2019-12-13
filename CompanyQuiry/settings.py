@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'web.apps.WebConfig',
     'rbac.apps.RbacConfig',
+    'stark.apps.StarkConfig',
 ]
 
 MIDDLEWARE = [
@@ -141,6 +142,7 @@ MENU_SESSION_KEY = 'company_menu_list_key'  # 名字根据项目更改
 VALID_URL_LIST = [
     '/login/',
     '/admin/.*',
+    # '',
 ]
 
 # 需要登录但无需权限的URL
@@ -155,4 +157,5 @@ AUTO_DISCOVER_EXCLUDE = [
     '/login/',
     '/logout/',
     '/index/',
+    # '',
 ]
