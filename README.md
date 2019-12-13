@@ -24,6 +24,30 @@
 **信息管理**
 ![](https://zok-blog.oss-cn-hangzhou.aliyuncs.com/images/20191213/WX20191213-110731.png)
 
+# 使用说明
+1. 根目录下 `Company.sql` 为数据库， 需要先导入到自己数据库中。
+2. 在 CompanyQuiry -> setting.py 中该部分设置
+
+```python
+DATABASES = {
+    'default': {
+        # 连接数据库类型 在末尾写入mysql即可
+        'ENGINE': 'django.db.backends.mysql',
+        # 数据库地址
+        'HOST': '127.0.0.1',
+        # 端口
+        'PORT': 3306,
+        # 数据库名
+        'NAME': 'Company',
+        # 用户
+        'USER': 'root',
+        # 密码
+        'PASSWORD': ''
+    }
+}
+```
+
+
 
 # rbac 组件使用
 [**rbac 说明文档**](https://blog.zhangkunzhi.com/2019/12/13/crm%E7%BB%84%E4%BB%B6%E4%BD%BF%E7%94%A8/index.html)
