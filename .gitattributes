@@ -1,0 +1,2 @@
+*.js linguist-language=python
+*.sql linguist-language=python
