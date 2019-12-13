@@ -14,39 +14,39 @@
 
 # 截图
 **菜单分配**
-![](https://zok-blog.oss-cn-hangzhou.aliyuncs.com/images/20191213/WX20191213-110528.png)
+![](static/img/WX20191213-110528.png)
 **用户管理**
-![](https://zok-blog.oss-cn-hangzhou.aliyuncs.com/images/20191213/WX20191213-110557.png)
+![](static/img/WX20191213-110557.png)
 **权限分配**
-![](https://zok-blog.oss-cn-hangzhou.aliyuncs.com/images/20191213/WX20191213-110617.png)
+![](static/img/WX20191213-110617.png)
 **菜单路由**
-![](https://zok-blog.oss-cn-hangzhou.aliyuncs.com/images/20191213/WX20191213-110714.png)
+![](static/img/WX20191213-110714.png)
 **信息管理**
-![](https://zok-blog.oss-cn-hangzhou.aliyuncs.com/images/20191213/WX20191213-110731.png)
+![](static/img/WX20191213-110731.png)
 
 # 使用说明
 1. 根目录下 `Company.sql` 为数据库， 需要先导入到自己数据库中。
 2. 在 CompanyQuiry -> setting.py 中该部分设置
-
-```python
-DATABASES = {
-    'default': {
-        # 连接数据库类型 在末尾写入mysql即可
-        'ENGINE': 'django.db.backends.mysql',
-        # 数据库地址
-        'HOST': '127.0.0.1',
-        # 端口
-        'PORT': 3306,
-        # 数据库名
-        'NAME': 'Company',
-        # 用户
-        'USER': 'root',
-        # 密码
-        'PASSWORD': ''
+    
+    ```python
+    DATABASES = {
+        'default': {
+            # 连接数据库类型 在末尾写入mysql即可
+            'ENGINE': 'django.db.backends.mysql',
+            # 数据库地址
+            'HOST': '127.0.0.1',
+            # 端口
+            'PORT': 3306,
+            # 数据库名
+            'NAME': 'Company',
+            # 用户
+            'USER': 'root',
+            # 密码
+            'PASSWORD': ''
+        }
     }
-}
-```
-
+    ```
+3. 启动Django项目
 
 
 # rbac 组件使用
