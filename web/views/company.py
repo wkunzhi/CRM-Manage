@@ -11,9 +11,7 @@ class CompanyHandler(PermissionHandler, StarkHandler):
     企业数据管理
     :return:
     """
-    list_display = ['title', 'money', 'flag_date', 'state', 'code', 'register_code', 'user_number',
-                    'company_code', 'company_type',
-                    'taxpayer_qualification', 'people']  # 自定义显示
+    list_display = ['title', 'money', 'flag_date', 'state', 'code', 'register_code', 'user_number', 'company_type', 'people']  # 自定义显示
 
     # 加上模糊搜索
     search_list = ['title__contains', 'once_name__contains', 'english_name__contains']

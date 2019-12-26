@@ -26,8 +26,8 @@
 ![](https://zok-blog.oss-cn-hangzhou.aliyuncs.com/images/20191213/WX20191213-110731.png)
 
 # 使用说明
-1. 根目录下 `Company.sql` 为数据库， 需要先导入到自己数据库中。
-2. 在 CompanyQuiry -> setting.py 中该部分设置
+1. 根目录下 `Company.sql` 为数据库， 需要先导入到自己数据库中！！！（数据库是我已经准备好的 ，需要导入一下）
+2. 在 CompanyQuiry -> setting.py 中该部分设置导入后的数据库连接
     
     ```python
     DATABASES = {
@@ -56,6 +56,16 @@
 # stark 组件使用说明
 
 [**stark 说明文档**](https://blog.zhangkunzhi.com/2019/12/13/stark%E7%BB%84%E4%BB%B6%E4%BD%BF%E7%94%A8/index.html)
+
+# 常见问题
+- [添加菜单后页面访问失败] 
+   ![](https://zok-blog.oss-cn-hangzhou.aliyuncs.com/images/20191226/WX20191226-110123%402x.png)
+    原因：菜单设置的路径名与model中不匹配导致无法自动寻找到路由
+    ![](https://zok-blog.oss-cn-hangzhou.aliyuncs.com/images/20191226/WX20191226-110354%402x.png)
+    ![](https://zok-blog.oss-cn-hangzhou.aliyuncs.com/images/20191226/WX20191226-110423%402x.png)
+    
+
+
 
 # QQ群
 ![](https://zok-blog.oss-cn-hangzhou.aliyuncs.com/2019/11/18/wx201911181627012x.png)

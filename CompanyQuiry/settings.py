@@ -157,5 +157,4 @@ AUTO_DISCOVER_EXCLUDE = [
     '/login/',
     '/logout/',
     '/index/',
-    '',
 ]

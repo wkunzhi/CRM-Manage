@@ -32,7 +32,7 @@ class RbacMiddleware(MiddlewareMixin):
 
         permission_dict = request.session.get(settings.PERMISSION_SESSION_KEY)
         if not permission_dict:  # 0权限，没有登录
-            return HttpResponse('未获取到用户权限信息，请登录！')
+            return HttpResponse('未获取到用户权限信息，请登录！<a href="login">点击登录</a>')
 
         # 非菜单的权限链接处理
         url_record = [

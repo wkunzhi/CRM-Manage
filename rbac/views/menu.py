@@ -236,7 +236,6 @@ def multi_permissions(request):
     update_formset_class = formset_factory(MultiEditPermissionForm, extra=0)  # 创建formset类
     generate_formset = None
     update_formset = None
-
     # 用户提交区
     if request.method == 'POST' and post_type == 'generate':
         # 批量添加
@@ -310,7 +309,8 @@ def multi_permissions(request):
         ...
     }
     """
-
+    print('项目中所有权限', router_name_set)
+    print('数据库中已录入的', permission_name_set)
     # 判断代码中path中和数据库中是否相等（防止万一改到代码后出现bug）
     for name, value in permission_dict.items():
         router_row_dict = all_url_dict.get(name)

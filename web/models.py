@@ -68,6 +68,7 @@ class Company(models.Model):
 
 
 class Card(models.Model):
+    """资质"""
     title = models.CharField(verbose_name='资质', max_length=32)
 
     def __str__(self):
