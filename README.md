@@ -15,15 +15,15 @@
 
 # 截图
 **菜单分配**
-![](https://zok-blog.oss-cn-hangzhou.aliyuncs.com/images/20191213/WX20191213-110528.png)
+![](https://github.com/wkunzhi/CRM-Manage/blob/master/static/img/img5.png)
 **用户管理**
-![](https://zok-blog.oss-cn-hangzhou.aliyuncs.com/images/20191213/WX20191213-110557.png)
+![](https://github.com/wkunzhi/CRM-Manage/blob/master/static/img/img4.png)
 **权限分配**
-![](https://zok-blog.oss-cn-hangzhou.aliyuncs.com/images/20191213/WX20191213-110617.png)
+![](https://github.com/wkunzhi/CRM-Manage/blob/master/static/img/img3.png)
 **菜单路由**
-![](https://zok-blog.oss-cn-hangzhou.aliyuncs.com/images/20191213/WX20191213-110714.png)
+![](https://github.com/wkunzhi/CRM-Manage/blob/master/static/img/img2.png)
 **信息管理**
-![](https://zok-blog.oss-cn-hangzhou.aliyuncs.com/images/20191213/WX20191213-110731.png)
+![](https://github.com/wkunzhi/CRM-Manage/blob/master/static/img/img1.png)
 
 # 使用说明
 1. 根目录下 `Company.sql` 为数据库， 需要先导入到自己数据库中！！！（数据库是我已经准备好的 ，需要导入一下）
