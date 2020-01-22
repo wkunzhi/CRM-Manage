@@ -4,6 +4,7 @@
 # 开发环境
 - Django 2.2.1
 - Python 3.6
+- Mysql 5.7
 
 # 目录
 - rbac **权限与菜单组件**
